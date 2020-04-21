@@ -1,0 +1,12 @@
+[package]
+name = "static-assert"
+version = "1.0.0"
+authors = ["Douman <douman@gmx.se>"]
+edition = "2018"
+repository = "https://github.com/DoumanAsh/static-assert"
+documentation = "https://docs.rs/static-assert/"
+categories = ["no-std"]
+keywords = ["assert", "testing"]
+readme = "README.md"
+
+[dependencies]
