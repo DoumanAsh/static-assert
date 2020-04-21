@@ -3,14 +3,14 @@
 //! ## Usage
 //!
 //! ```rust
-//! use static_assert::static_assert;
+//! use sa::static_assert;
 //!
 //! static_assert!(1 == 1);
 //! static_assert!(1 == 1, "Must be equal");
 //! ```
 //!
 //! ```compile_fail
-//! use static_assert::static_assert;
+//! use sa::static_assert;
 //!
 //! static_assert!(0 == 1, "Must be equal"); //should fail
 //! ```

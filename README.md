@@ -1,8 +1,8 @@
 # static-assert
 
 ![](https://github.com/DoumanAsh/static-assert/workflows/Rust/badge.svg)
-[![Crates.io](https://img.shields.io/crates/v/static-assret.svg)](https://crates.io/crates/static-assert)
-[![Documentation](https://docs.rs/static-assert/badge.svg)](https://docs.rs/crate/static-assert/)
+[![Crates.io](https://img.shields.io/crates/v/sa.svg)](https://crates.io/crates/sa)
+[![Documentation](https://docs.rs/sa/badge.svg)](https://docs.rs/crate/sa/)
 
 Simple implementation of C++'s [static_assert](https://en.cppreference.com/w/cpp/language/static_assert)
 
