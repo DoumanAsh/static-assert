@@ -12,15 +12,11 @@
 //! ```compile_fail
 //! use sa::static_assert;
 //!
+//!
 //! static_assert!(0 == 1, "Must be equal"); //should fail
 //! ```
-//!
-//! ## Nightly detection
-//!
-//! Currently the lib automatically detects compiler version in order to decide whether enable `const_if_match` to use `compile_error!` for a better read-ability.
 
 #![no_std]
-#![cfg_attr(feature = "nightly", feature(const_if_match))]
 
 #[macro_export]
 ///If const expression evaluates to `true`, this macro has no effect.
@@ -38,16 +34,7 @@ macro_rules! static_assert {
         #[deny(const_err)]
         #[allow(unused_must_use)]
         const _: () = {
-            #[cfg(not(nightly))]
-            {
-                $exp as usize - 1usize;
-            }
-            #[cfg(nightly)]
-            {
-                if !$exp {
-                    core::compile_error!($msg);
-                }
-            }
+            $exp as usize - 1usize;
 
             ()
         };
