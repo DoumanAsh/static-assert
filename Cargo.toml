@@ -1,6 +1,6 @@
 [package]
 name = "sa"
-version = "1.0.1"
+version = "2.0.0"
 authors = ["Douman <douman@gmx.se>"]
 edition = "2018"
 repository = "https://github.com/DoumanAsh/static-assert"

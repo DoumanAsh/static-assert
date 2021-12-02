@@ -4,6 +4,10 @@
 [![Crates.io](https://img.shields.io/crates/v/sa.svg)](https://crates.io/crates/sa)
 [![Documentation](https://docs.rs/sa/badge.svg)](https://docs.rs/crate/sa/)
 
-Simple implementation of C++'s [static_assert](https://en.cppreference.com/w/cpp/language/static_assert)
+Simple `static_assert` macro for compile time  assertions.
 
-Something like this should be in std, but Rust lang team being Rust lang team as usual
+Uses `const_panic` within `const` variable to produce compile error hence only usable in `const` context
+
+## Requirements
+
+- Rust 1.57
